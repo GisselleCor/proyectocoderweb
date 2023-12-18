@@ -25,9 +25,8 @@ ESTILOS DEL NAVBAR
   list-style-type: none;
 }
 .menuNav li{
-  margin: 2%;
+  margin: 5%;
 }
-
 
 h1 {
     font-size: 30px;
@@ -39,7 +38,7 @@ ESTILOS DEL MAIN
 */
 .imagenPortada {
   width: 100%;
-  max-height: 300PX;
+  max-height: 800PX;
 }
 
 h1 { 
@@ -56,6 +55,10 @@ h1 {
   margin: 1%;
   text-align: center;
 }
+/*/////////////////
+Portada Principal sin ocupar se cambió por ModelGrid
+///////////////////
+*/
 
 .portadaPrincipal{
   display: grid ;
@@ -69,7 +72,10 @@ h1 {
   display: flex;
   margin-left:auto;
 }
-
+/*/////////////////
+Box sin uso se cambió por BoxModelGrid (1,2,3 y4)
+///////////////////
+*/
 .box {
   width: 95%;
   height: 150px;
@@ -84,10 +90,12 @@ h1 {
 ESTILOS DEL PAGE NUESTROS PILARES/ GRILLAS
 ////////////////////////////////////////////
 */
-.boxModelGrid {
+.ModelGrid {
     display: grid ;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 100px 100px ;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+            "1 2 3 4";
     gap: 20px;
 }
 
@@ -95,6 +103,9 @@ ESTILOS DEL PAGE NUESTROS PILARES/ GRILLAS
   display: grid ;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: 100px 100px ;
+  grid-template-areas: 
+          "a b"
+          "c d";
   gap: 20px;
 }
 
@@ -114,8 +125,96 @@ ESTILOS DEL FOOTER
   justify-content: space-around;
   padding: 0 20px;
   align-items: center;
-
 }
-
-
+/*
+////////////////////////////
+ESTILOS DEL MEDIA
+////////////////////////////
+*/
+@media (max-width: 480px){
+/*
+////////////////////////////
+ESTILOS MEDIA NAV
+////////////////////////////
+*/
+  .nav{
+    flex-direction: column;
+  }
+  .nav ul{
+    text-align: center;
+    flex-direction: column;
+  }
+  /*
+////////////////////////////
+ESTILOS MEDIA MAIN 
+////////////////////////////
+*/
+  .ModelGrid{
+    display: grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "1"
+            "2"
+            "3"
+            "4" ; 
+    gap: 20px;
+    text-align: center;
+}
+.boxModelGrid1{
+  grid-area:1;
+}
+.boxModelGrid2{
+  grid-area:2;
+}
+.boxModelGrid3{
+  grid-area:3;
+}
+.boxModelGrid4{
+  grid-area:4;
+}
+/*///////////////////////////
+ESTILOS MEDIA SERVICIOS
+////////////////////////////
+*/
+  .serviciosGrid{
+    display: grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d";
+    gap: 20px;
+    text-align: center;
+  }
+  .boxServicio1{
+    grid-area:a;
+  }
+  .boxServicio2{
+    grid-area:b;
+  }
+  .boxServicio3{
+    grid-area:c;
+  }
+  .boxServicio4{
+    grid-area:d;
+  }
+/*///////////////////////////
+ESTILOS MEDIA FOOTER
+////////////////////////////
+*/
+  .footer{
+    flex-direction: column;
+    height: 30%;
+  }
+  .footer img{
+    margin:  5%;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+}
 
