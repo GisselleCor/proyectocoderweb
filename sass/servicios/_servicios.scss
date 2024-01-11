@@ -1,0 +1,47 @@
+/*///////////////////////////
+ESTILOS MEDIA SERVICIOS
+////////////////////////////
+*/
+.serviciosGrid{
+    display: grid ;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+            "boxServicio1 boximg1"
+            "boximg2 boxServicio2"
+            "boxServicio3 boximg3"
+            "boximg4 boxServicio4";
+    gap: 20px;
+    text-align: center;
+    .boxServicio1{
+      grid-area:boxServicio1;
+    }
+    .boxServicio2{
+      grid-area:boxServicio2;
+    }
+    .boxServicio3{
+      grid-area:boxServicio3;
+    }
+    .boxServicio4{
+      grid-area:boxServicio4;
+    }
+    .boximg {
+      width: 100%;
+      height: 100%;
+    }
+    .boximg1{
+      grid-area: boximg1;
+    }
+    .boximg2{
+      grid-area: boximg2;
+    }
+    .boximg3{
+      grid-area: boximg3;
+    }
+    .boximg4{
+      grid-area: boximg4;
+    }
+  }
+  

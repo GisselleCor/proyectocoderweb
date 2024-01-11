@@ -1,0 +1,60 @@
+/* /////////////
+ESTILOS DEL MAIN 
+*///////////////
+.imagenPortada {
+  width: 100%;
+  max-height: 800PX;
+  
+}
+
+h1 { 
+  margin: 5%;
+  text-align: center;
+}
+/*
+.portadaPrincipal 
+            .ul{
+            display: flex;
+            list-style-type: none;
+}
+            .li { 
+            margin: 1%;
+            text-align: center;
+}
+
+////////////////////////////////////////////
+ESTILOS DEL PAGE NUESTROS PILARES GRILLAS
+////////////////////////////////////////////
+*/
+.ModelGrid {
+    display: grid ;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+            "boxModelGrid1 boxModelGrid2 boxModelGrid3 boxModelGrid4";
+    gap: 20px;
+    text-align:center;
+    margin: 50px;
+
+    .boxModelGrid1{
+    grid-area:boxModelGrid1;
+    }
+    .boxModelGrid2{
+    grid-area:boxModelGrid2;
+    }
+    .boxModelGrid3{
+    grid-area:boxModelGrid3;
+    }
+    .boxModelGrid4{
+    grid-area:boxModelGrid4;;
+    }
+}
+.serviciosGrid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 100px 100px ;
+  grid-template-areas: 
+          "a b"
+          "c d";
+  gap: 20px;
+}

@@ -1,0 +1,54 @@
+ ////////////////////////////
+  ESTILOS MEDIA NAV
+  ////////////////////////////
+  */
+    .nav{
+      flex-direction: column;
+    }
+    .nav ul{
+      text-align: center;
+      flex-direction: column;
+    }
+    ////////////////////////////
+ESTILOS MEDIA MAIN 
+////////////////////////////
+*/
+.ModelGrid{
+    display: grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "1"
+            "2"
+            "3"
+            "4" ; 
+    gap: 20px;
+    text-align: center;
+}
+.boxModelGrid1{
+  grid-area:1;
+}
+.boxModelGrid2{
+  grid-area:2;
+}
+.boxModelGrid3{
+  grid-area:3;
+}
+.boxModelGrid4{
+  grid-area:4;
+}
+  /*///////////////////////////
+ESTILOS MEDIA FOOTER
+////////////////////////////
+*/
+#footer {
+    flex-direction: column;
+    height: 30%;
+}
+.footer img{
+    margin:  5%;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    
+}

@@ -1,0 +1,31 @@
+
+  
+.h1{ 
+    margin: 5%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px
+}
+
+.h3{
+margin: 5%;
+text-align: center;
+}
+
+.gradient-bg {
+    background: linear-gradient(to left, transparent 0%, rgba(255, 255, 255, 1) 100%), url('../imagenes/food-trucks.webp');
+    background-size:cover; /* Ajusta según sea necesario */
+
+  }
+
+.Nosotros1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 3fr ;
+    grid-template-areas: 
+            "parrafosNosotros . .";
+    gap: 20px;
+    .parrafosNosotros{
+        grid-area:parrafosNosotros;
+      }
+}

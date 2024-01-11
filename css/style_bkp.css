@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*
+
+///////////////////////
+ESTILOS DEL NAVBAR
+///////////////////////
+*/
+.nav{
+  display: flex;
+  background-color: blue;
+}
+.nav a{
+  margin: 5%;
+  color: white;
+  text-decoration-line:none;
+  transition: 1s;
+}
+.menuNav{
+  display: flex;
+  list-style-type: none;
+}
+.menuNav li{
+  margin: 5%;
+}
+
+.nav ul li a:hover {
+  color: black;
+  font-size: 20px;
+  transition: 1s;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+}
+.navbar {
+  background-color: blue;
+  position: fixed;
+}
+
+/*
+ESTILOS DEL MAIN 
+*/
+.imagenPortada {
+  width: 100%;
+  max-height: 800PX;
+}
+
+h1 { 
+  margin: 5%;
+  text-align: center;
+}
+
+.portadaPrincipal ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.portadaPrincipal ul li { 
+  margin: 1%;
+  text-align: center;
+}
+/*/////////////////
+Portada Principal sin ocupar se cambió por ModelGrid
+///////////////////
+*/
+
+.portadaPrincipal{
+  display: grid ;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 100px ;
+  align-items: center;
+  text-align: center;
+}
+
+.boxModel{
+  display: flex;
+  margin-left:auto;
+}
+/*/////////////////
+Box sin uso se cambió por BoxModelGrid (1,2,3 y4)
+///////////////////
+*/
+.box {
+  width: 95%;
+  height: 150px;
+  background-color: cornflowerblue;
+  margin: 1%;
+  overflow:auto;
+  text-align: center
+}
+
+/*
+////////////////////////////////////////////
+ESTILOS DEL PAGE NUESTROS PILARES/ GRILLAS
+////////////////////////////////////////////
+*/
+.ModelGrid {
+    display: grid ;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+            "1 2 3 4";
+    gap: 20px;
+}
+
+.serviciosGrid {
+  display: grid ;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 100px 100px ;
+  grid-template-areas: 
+          "a b"
+          "c d";
+  gap: 20px;
+}
+
+/*
+///////////////////////////////////////////
+ESTILOS DEL FOOTER
+///////////////////////////////////////////
+*/ 
+.footer{ 
+  height: 10%;
+  background-color: blue;
+  display: flex;
+  height: 100px;;
+}
+.footer img{
+  margin:  2%;
+  justify-content: space-around;
+  padding: 0 20px;
+  align-items: center;
+}
+/*
+////////////////////////////
+ESTILOS DEL MEDIA
+////////////////////////////
+*/
+@media (max-width: 480px){
+/*
+////////////////////////////
+ESTILOS MEDIA NAV
+////////////////////////////
+*/
+  .nav{
+    flex-direction: column;
+  }
+  .nav ul{
+    text-align: center;
+    flex-direction: column;
+  }
+  /*
+////////////////////////////
+ESTILOS MEDIA MAIN 
+////////////////////////////
+*/
+  .ModelGrid{
+    display: grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "boxModelGrid1 boximg1"
+            "boximg2 boxModelGrid2"
+            "boxModelGrid3 boximg3"
+            "boximg4 boxModelGrid4" ; 
+    gap: 20px;
+    text-align: center;
+}
+.boxModelGrid1{
+  grid-area:boxModelGrid1;
+}
+.boxModelGrid2{
+  grid-area:boxModelGrid2;
+}
+.boxModelGrid3{
+  grid-area:boxModelGrid3;
+}
+.boxModelGrid4{
+  grid-area:boxModelGrid4;
+}
+
+
+/*///////////////////////////
+ESTILOS MEDIA SERVICIOS
+////////////////////////////
+*/
+  .serviciosGrid{
+    display: grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d";
+    gap: 20px;
+    text-align: center;
+  }
+  .boxServicio1{
+    grid-area:a;
+  }
+  .boxServicio2{
+    grid-area:b;
+  }
+  .boxServicio3{
+    grid-area:c;
+  }
+  .boxServicio4{
+    grid-area:d;
+  }
+/*///////////////////////////
+ESTILOS MEDIA FOOTER
+////////////////////////////
+*/
+  .footer{
+    flex-direction: column;
+    height: 30%;
+  }
+  .footer img{
+    margin:  5%;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+}
+

@@ -1,0 +1,15 @@
+@media (max-width: 480px){
+    .serviciosGrid{
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+                "boxServicio1" 
+                "boximg1"
+                "boxServicio2"
+                "boximg2" 
+                "boxServicio3" 
+                "boximg3"
+                "boxServicio4"
+                "boximg4";}}
