@@ -9,8 +9,18 @@ ESTILOS DEL NAVBAR
     background: #0052D4;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    .GiEvents{
+    width: 9%;
+    max-height: 30%
+    position fixed;
+    margin:1%;
+    border-radius: 5%;
+    background-color: transparent;
+    
+}
     a{
-        margin: 5%;
+        margin: 2%;
         color: white;
         text-decoration-line:none;
         transition: 1s;
@@ -19,7 +29,7 @@ ESTILOS DEL NAVBAR
         display: flex;
         list-style-type: none;
         li{
-            margin: 5%;
+            margin: 10%;
             a:hover {
                 color: black;
                 font-size: 20px;
